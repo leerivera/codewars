@@ -7,3 +7,12 @@ function invert(array) {
   function invert(array) {
     return array.map(i => 0 - i);
   }
+
+  function invert(array) {
+    var newArr = [];
+    for(var i = 0; i < array.length; i++){
+      newArr.push(-array[i]);
+    }
+     return newArr;
+  }
+  
