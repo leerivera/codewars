@@ -9,3 +9,8 @@
 function hero(bullets, dragons){
     return bullets >= 2 * dragons
 }
+
+function hero(bullets, dragons){
+    //Get Coding!
+    return (bullets / 2 >= dragons) ? true : false;
+    }
