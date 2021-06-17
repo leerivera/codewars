@@ -14,3 +14,11 @@ function hero(bullets, dragons){
     //Get Coding!
     return (bullets / 2 >= dragons) ? true : false;
     }
+
+
+    const BULLETS_PER_DRAGON = 2;
+
+    function hero(bullets, dragons) {
+      const survive = bullets >= dragons * BULLETS_PER_DRAGON;
+      return survive;
+    }
