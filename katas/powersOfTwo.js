@@ -16,3 +16,13 @@ function powersOfTwo(n){
   function powersOfTwo(n) {
     return Array.from({length: n + 1}, (v, k) => 2 ** k);
   }
+
+  function powersOfTwo(n){
+    var arr = [];
+    
+    for (var i=0; i<=n; ++i){
+      arr.push(Math.pow(2, i));
+    }
+    
+    return arr;
+  }
