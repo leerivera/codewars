@@ -32,3 +32,7 @@ function powersOfTwo(n){
   }
 
   powersOfTwo = n => [...Array(n + 1)].map((e, i) => Math.pow(2, i));
+
+
+  const powersOfTwo = n =>
+  [...Array(++n)].map((_, idx) => 2 ** idx);
