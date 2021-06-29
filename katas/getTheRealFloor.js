@@ -9,3 +9,13 @@
 function getRealFloor(n){
      return n> 13 ? n-2 : n > 0 ? n -1 : n
 }
+
+function getRealFloor(n) {
+    // Less than 1, return n
+    if (n <= 0) return n;
+    
+    return n - (n >= 13 ? 2 : 1);
+  }
+
+  const getRealFloor = n =>
+  n > 0 ? --n - (n >= 13) : n;
