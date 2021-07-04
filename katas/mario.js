@@ -35,3 +35,15 @@ function pipeFix(numbers){
     }
     return n_array;
   }
+
+ 
+  
+  function pipeFix(numbers){
+    var newArray = [];
+    var min = getMinOfArray(numbers);
+    var max = getMaxOfArray(numbers);
+    for (var i = min; i <= max; i++) {
+      newArray.push(i);
+    }
+    return newArray;
+  }
