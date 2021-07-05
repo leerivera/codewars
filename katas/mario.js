@@ -38,6 +38,10 @@ function pipeFix(numbers){
 
  
   
+  function getMinOfArray(numbers) {
+    return Math.min.apply(null, numbers);
+  }
+  
   function pipeFix(numbers){
     var newArray = [];
     var min = getMinOfArray(numbers);
