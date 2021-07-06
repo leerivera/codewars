@@ -36,7 +36,9 @@ function pipeFix(numbers){
     return n_array;
   }
 
- 
+  function getMaxOfArray(numbers) {
+    return Math.max.apply(null, numbers);
+  }
   
   function getMinOfArray(numbers) {
     return Math.min.apply(null, numbers);
