@@ -53,3 +53,5 @@ function pipeFix(numbers){
     }
     return newArray;
   }
+
+  const pipeFix = arr => Array(arr.pop() - arr[0] + 1).fill(0).map((e,i) => i + arr[0])
