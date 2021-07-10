@@ -20,3 +20,7 @@
     return count;
     
   }
+
+  function strCount(str, letter){  
+    return str.split('').filter(a => a==letter).length;
+  }
