@@ -24,3 +24,20 @@
   function strCount(str, letter){  
     return str.split('').filter(a => a==letter).length;
   }
+
+  function strCount(str, letter){  
+    var occurences=0;
+    if(str=='')
+    {
+      return 0;
+    }
+   
+   for(var i=0;i<str.length;i++)
+   {
+      if(str.charAt(i)==letter)
+      {
+        occurences++;
+      }
+   }
+   return occurences;
+   }
