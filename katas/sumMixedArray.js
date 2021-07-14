@@ -6,3 +6,7 @@
 function sumMix(x){
     return x.reduce((x, y) => Number(x) + Number(y), 0);
   }
+
+  function sumMix(x){
+    return x.map(a => +a).reduce((a, b) => a + b);
+  }
