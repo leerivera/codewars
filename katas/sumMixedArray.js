@@ -18,3 +18,7 @@ function sumMix(x){
     }
     return result;
   }
+
+  function sumMix(x){
+    return eval( x.join("+") )
+  }
