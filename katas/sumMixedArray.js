@@ -22,3 +22,15 @@ function sumMix(x){
   function sumMix(x){
     return eval( x.join("+") )
   }
+
+
+  function sumMix(x){
+    var newArr = [];
+      for(i=0; i< x.length; i++){
+         if(typeof(x[i]) === 'string') {
+            newArr.push(parseInt(x[i],10));
+          } else newArr.push(x[i])
+        }
+        return newArr.reduce((a,b)=> a+b);
+    }
+    
