@@ -7,3 +7,10 @@
 function twiceAsOld(dadYearsOld, sonYearsOld) {
     return Math.abs(dadYearsOld - 2 * sonYearsOld)
 }
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    // dadYearsOld must be sonYearsOld * 2
+    // dadYearsOld when son is 0 is dadYearsOld - sonYearsOld
+    let difference = dadYearsOld - sonYearsOld;
+    return Math.abs(dadYearsOld - difference*2);
+  }
