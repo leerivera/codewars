@@ -12,3 +12,7 @@ function litres(time) {
 
 
 const litres = time => Math.floor(time * 0.5);
+
+function litres(time) {
+    return Math.round((time * 0.5) - 0.5)
+  }
