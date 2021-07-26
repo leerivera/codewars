@@ -16,3 +16,16 @@ const litres = time => Math.floor(time * 0.5);
 function litres(time) {
     return Math.round((time * 0.5) - 0.5)
   }
+
+  function litres(time) {
+    let count = 0;
+    let restHours = time
+    for (let i = 0; i < time; i++) {
+      restHours = time - i
+      if (restHours >= 1) {
+        count += 0.5
+      }
+      
+    }
+    return Math.floor(count)
+  } 
