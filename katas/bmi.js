@@ -12,3 +12,18 @@ function bmi(weight, height){
     const x = weight / height **2
     return x <= 18.5 ? 'Underweight' : x <= 25.0 ? 'Normal' : x <= 30.0 ? 'Overweight' : 'Obese'
  }
+
+ function bmi(weight, height) {
+    var result = weight/Math.pow(height,2) 
+    
+    if (result <= 18.5) {
+      return "Underweight";
+    } else if (result <= 25) {
+      return "Normal";
+    } else if (result <= 30) {
+      return "Overweight";
+    } else {
+      return "Obese";
+    }
+    
+  }
