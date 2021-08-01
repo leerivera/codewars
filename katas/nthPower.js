@@ -19,3 +19,17 @@ function index(array, n){
   function index( array, n ) {
     return (array.length) > n ? Math.pow(array[n], n) : -1;
 }
+
+function index(array, n){
+    var p = array.length;
+    if(n < p){
+        for(i=0; i<p; i++){
+        if(n == i){
+          return Math.pow(array[i], n);
+        }
+      }
+    }else{
+      return -1;
+    }
+    
+  }
