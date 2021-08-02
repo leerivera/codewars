@@ -8,3 +8,5 @@
 // array = [1, 2, 3] and N = 3, but N is outside of the array, so the result is -1.
 
 index = (array, n) => array[n] ** n || -1
+
+const index = (array, n) => array.length > n ? Math.pow(array[n], n) : -1;
