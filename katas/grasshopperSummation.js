@@ -23,3 +23,8 @@ var summation = function (num) {
   var summation = function f(num) {
     return num ? num + f(num-1) : 0;
   }
+
+  const summation = num => (
+    Array(num).fill(true)
+      .reduce((sum, item, index) => sum + index + 1, 0)
+  );
