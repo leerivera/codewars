@@ -19,3 +19,7 @@ var summation = function (num) {
     }
     return sum;
   }
+
+  var summation = function f(num) {
+    return num ? num + f(num-1) : 0;
+  }
