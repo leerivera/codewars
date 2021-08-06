@@ -11,3 +11,11 @@ var summation = function (num) {
 }
 
 const summation = n => n * (n + 1) / 2;
+
+var summation = function (num) {
+    var sum = 0;
+    for(var i=0; i<=num;i++){
+      sum+=i
+    }
+    return sum;
+  }
