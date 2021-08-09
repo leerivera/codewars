@@ -55,3 +55,7 @@ function past(h, m, s) {
 
   const past = (...args) =>
   args.reduce((pre, val) => 60 * pre + val, 0) * 1e3;
+
+  function past(h, m, s){
+    return Math.ceil(new Date().setHours(h,m,s) - new Date().setHours(0,0,0))
+  }
