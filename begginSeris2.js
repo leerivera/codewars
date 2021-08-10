@@ -52,3 +52,6 @@ function past(h, m, s) {
   }
 
   past = (h, m, s) => ((h * 60 + m) * 60 + s) * 1000;
+
+  const past = (...args) =>
+  args.reduce((pre, val) => 60 * pre + val, 0) * 1e3;
