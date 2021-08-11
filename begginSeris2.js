@@ -50,3 +50,5 @@ function past(h, m, s) {
     
     return hours + minutes + seconds;
   }
+
+  past = (h, m, s) => ((h * 60 + m) * 60 + s) * 1000;
