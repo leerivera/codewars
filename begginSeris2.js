@@ -27,3 +27,11 @@ function past(h, m, s) {
     }
     return timeArray.reduce((a, b) => a + b, 0);
   }
+
+  function past(h, m, s){
+    var miliseconds = 0;
+    miliseconds = miliseconds + s * 1000;
+    miliseconds = miliseconds + m * 60000;
+    miliseconds = miliseconds + h * 3600000;
+    return miliseconds;
+  }
