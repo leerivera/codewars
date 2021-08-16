@@ -24,3 +24,9 @@ function solution(string) {
     })
     return string.join('')
   }
+
+  const solution = string => {
+    return [...string].map((char) => {
+      return (char === char.toUpperCase()) ? ` ${char}` : char;
+    }).join('');
+  }
