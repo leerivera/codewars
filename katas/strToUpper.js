@@ -7,3 +7,7 @@ function DNAtoRNA(dna) {
     
     return dna;
   }
+
+  String.prototype.isUpperCase = function() {
+    return this.toUpperCase() == this;
+  }
