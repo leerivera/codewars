@@ -26,3 +26,7 @@ function DNAtoRNA(dna) {
     // join the array 
     return rnaArray.join("");
   }
+
+  function DNAtoRNA(dna){
+    return dna.replace(/T/g, 'U');
+  }
