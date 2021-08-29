@@ -49,3 +49,7 @@ function repeatStr (n, s) {
   function repeatStr (n, s) {
     return new Array(n).fill(s).join('');
   }
+
+  function repeatStr (n, s) {
+    return Array.from(Array(n)).reduce(acc => acc + s, '')
+}
