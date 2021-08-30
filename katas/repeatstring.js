@@ -45,3 +45,7 @@ function repeatStr (n, s) {
 function repeatStr (n, s) {
     return Array(n+1).join(s);
   }
+
+  function repeatStr (n, s) {
+    return new Array(n).fill(s).join('');
+  }
