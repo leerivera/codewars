@@ -41,3 +41,7 @@ function repeatStr (n, s) {
   const repeatStr = (n, s) => {
     return Array.apply(null, Array(n)).map((i) => s).join('')
 }
+
+function repeatStr (n, s) {
+    return Array(n+1).join(s);
+  }
