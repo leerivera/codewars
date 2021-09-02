@@ -32,3 +32,7 @@ function repeatStr (n, s) {
 const repeatStr = (n, s) => s.repeat(n)
 
 const repeatStr = (n, s) => s["repeat"](n)
+
+function repeatStr (n, s) {
+    return n > 1 ? s + repeatStr(--n, s) : s;
+  }
