@@ -28,3 +28,5 @@ function repeatStr (n, s) {
     }
     return newString.join('')
 }
+
+const repeatStr = (n, s) => s.repeat(n)
