@@ -23,3 +23,7 @@ const corrections = {
   const correct = string => (
     string.replace(/[501]/g, character => corrections[character])
   );
+
+  function correct(string) {
+    return [...string].map(a => ({'0':'O','5':'S','1':'I'})[a]||a).join('')
+  }
