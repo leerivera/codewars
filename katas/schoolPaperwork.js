@@ -14,3 +14,5 @@ function paperwork(n, m) {
   }
 
   paperwork = (n, m) => n < 0 || m < 0 ? 0 : n * m
+
+  const paperwork = (n, m) => Math.max(0, n) * Math.max(0, m);
