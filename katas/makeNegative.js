@@ -10,3 +10,7 @@ function makeNegative(num) {
     return (num > 0) ? parseInt(`-${num}`, 10) : num
   
   }
+
+  function makeNegative(num) {
+    return -Math.abs(num);
+  }
