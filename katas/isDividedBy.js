@@ -6,3 +6,5 @@ let isDivideBy = (number, a, b) => {
       return false
     }
   }
+
+  const isDivideBy = (number, a, b) => number % a === 0 && number % b === 0;
