@@ -30,3 +30,5 @@ function repeatStr (n, s) {
 }
 
 const repeatStr = (n, s) => s.repeat(n)
+
+const repeatStr = (n, s) => s["repeat"](n)
