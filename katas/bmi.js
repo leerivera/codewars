@@ -42,3 +42,16 @@ function bmi(weight, height){
       
     }
   }
+
+  function bmi(weight, height) {
+    // NOTE: ASC tuples array
+    const types = [
+      [18.5, "Underweight"],
+      [25, "Normal"],
+      [30, "Overweight"],
+      [Number.MAX_SAFE_INTEGER, "Obese"],
+    ];
+    const bmi = weight / (height * height);
+    
+    return types.find((tuple) => bmi <= tuple[0])[1];
+  }
