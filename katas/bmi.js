@@ -55,3 +55,13 @@ function bmi(weight, height){
     
     return types.find((tuple) => bmi <= tuple[0])[1];
   }
+
+  function bmi(weight, height) {
+    const calc = (weight / height ** 2).toFixed(2);
+    const index = ['Underweight', 'Normal', 'Overweight', 'Obese'];
+  
+    if (calc <= 18.5) return index[0];
+    if (calc <= 25.0) return index[1];
+    if (calc <= 30.0) return index[2];
+    if (calc > 30.0) return index[3];
+}
