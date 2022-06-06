@@ -41,3 +41,12 @@
    }
    return occurences;
    }
+
+
+   function strCount(str, letter) { 
+    let count = 0;
+    
+    [...str].forEach(char => char == letter ? count++ : count);
+    
+    return count;
+  }
